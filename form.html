@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+</head>
+<body class="com-buzzfeed-newsapp">
+
+<nav>
+    <div class="pull-right">
+        <a class="btn btn-default js-save" title="Save">
+            <i class="glyphicon glyphicon-share-alt"></i>
+        </a>
+        <a class="btn btn-default js-refresh" title="Refresh">
+            <i class="glyphicon glyphicon glyphicon-refresh"></i>
+        </a>
+        <a class="btn btn-default js-close" title="Close">
+            <i class="glyphicon glyphicon glyphicon-remove"></i>
+        </a>
+    </div>
+    <a class="btn btn-default js-live-edit pull-left" title="Live Edit">
+        <i class="glyphicon glyphicon-pencil"></i>
+    </a>
+    <div class="form-group pull-left">
+        <select class="form-control" name="module_type">
+            <option value="url">Link</option>
+            <option value="tweet">Tweet</option>
+        </select>
+    </div>
+    <ul class="pagination">
+        <li class="active"><a href="#content" aria-controls="content" role="tab" data-toggle="tab">Content</a></li>
+        <li><a href="#image" aria-controls="image" role="tab" data-toggle="tab">Image</a></li>
+        <li><a href="#meta" aria-controls="meta" role="tab" data-toggle="tab">Meta</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- Content Tab -->
+        <div role="tabpanel" class="tab-pane active" id="content">
+            <form class="form-inline">
+                <div class="input-container">
+                    <label for="headlineInput"><i class="glyphicon glyphicon-header"></i></label>
+                    <textarea class="form-control input-300" id="headlineInput" rows="2" ></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="bodyInput"><i class="glyphicon glyphicon-align-left"></i></label>
+                    <textarea class="form-control input-300" id="bodyInput" rows="2" ></textarea>
+                </div>
+            </form>
+        </div>
+        <!-- Image Tab -->
+        <div role="tabpanel" class="tab-pane" id="image">
+            <form class="form-inline">
+                <div class="input-container">
+                    <input type="hidden" id="inputImage"/>
+                    <a target="_new" class="img-thumbnail" id="imageLink"><img style="max-height:40px;" id="imageInputDisplay"/></a>
+                </div>
+                <div class="input-container">
+                    <label for="captionInput"><i class="glyphicon glyphicon-picture"></i></label>
+                    <input type="text" class="form-control input-200" id="captionInput"  />
+                </div>
+                <div class="input-container">
+                    <label for="creditInput"><i class="glyphicon glyphicon-copyright-mark"></i></label>
+                    <input type="text" class="form-control input-200" id="creditInput" />
+                </div>
+            </form>
+        </div>
+        <!-- Meta Tab -->
+        <div role="tabpanel" class="tab-pane" id="meta">
+            <form class="form-inline">
+                <div class="input-container">
+                    <label for="inputTimestamp"><i class="glyphicon glyphicon-time"></i></label>
+                    <input type="text" class="form-control input-200" id="inputTimestamp"  />
+                </div>
+                <div class="input-container">
+                    <label for="inputAnchor"><i class="glyphicon glyphicon glyphicon-link"></i></label>
+                    <input type="text" class="form-control input-200" id="inputAnchor" />
+                </div>
+                <div class="input-container">
+                    <label for="inputTags"><i class="glyphicon glyphicon-tags"></i></label>
+                    <input type="text" class="form-control input-200" id="inputTags" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</nav>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/content.js"></script>
+</body>
+</html>
+
+
+
